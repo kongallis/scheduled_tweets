@@ -1,6 +1,7 @@
 <h1>Schedule a Tweet</h1>
 
 <%= form_with model: @tweet do |form| %>
+<%= render "shared/form_errors", form: form%>
 <div class="mb-3">
     <%= form.label :twitter_account_id %>
     <%= form.collection_select :twitter_account_id, Current.user.twitter_accounts, :id, :username, {}, { class: "form-control"} %>
@@ -11,9 +12,9 @@
     <%= form.text_field :body, class: "form-control" %>
 </div>
 <div class="mb-3">
-    <%= form.label :publish_at %>
+    <%= form.label :published_at %>
     <div class="form-control">
-        <%= form.datetime_select :publish_at %>
+        <%= form.datetime_select :published_at %>
     </div>
 </div>
 
