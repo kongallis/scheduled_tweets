@@ -8,6 +8,7 @@
         <%= link_to "View Tweet", "https://twitter.com/#{tweet.twitter_account.username}/status/#{tweet.tweet.id}", target: :_blank %>
         <% else %>
         Scheduled for: <%= l tweet.published_at, format: :short %>
+        <%= link_to "Edit", edit_tweet_path(tweet), class: "btn btn-sm btn-warning border border-secondary" %>
         <% end %>
     </div>
 </div>
