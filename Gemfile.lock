@@ -147,6 +147,7 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
+    pg (1.2.3)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -223,7 +224,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.1.0)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -280,6 +280,7 @@ DEPENDENCIES
   listen (~> 3.3)
   omniauth-rails_csrf_protection (~> 1.0)
   omniauth-twitter (~> 1.4)
+  pg (~> 1.1)
   pry (~> 0.13.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
@@ -288,7 +289,6 @@ DEPENDENCIES
   selenium-webdriver
   sidekiq (~> 6.1)
   spring
-  sqlite3 (~> 1.4)
   turbolinks (~> 5)
   twitter (~> 7.0)
   tzinfo-data
